@@ -293,7 +293,6 @@ Context from the PDF:
 User question: {request.message}
 
 Provide a clear, concise answer using only the given context. If the context doesn't contain the answer, say so explicitly."""
-        print("AI21_API_KEY1", AI21_API_KEY)
         # 6. Generate AI21 response
         response = ai21_client.chat.completions.create(
             model="jamba-large",
@@ -310,11 +309,6 @@ Provide a clear, concise answer using only the given context. If the context doe
 
         # Access the assistant's message correctly
         answer = response.choices[0].message.content
-
-        print("AI21_API_KEY2", AI21_API_KEY)
-        print("AI21 response:", response)
-
-        print("AI21_API_KEY2", AI21_API_KEY)
 
         print("answer", answer)
         # 7. Unique citations
