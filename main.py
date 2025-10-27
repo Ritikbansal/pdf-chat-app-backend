@@ -31,7 +31,7 @@ app = FastAPI(title="PDF RAG API")
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000", "https://your-nextjs-app.vercel.app"],
+    allow_origins=["http://localhost:3000", "https://pdf-chat-app-8sqp.onrender.com"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
